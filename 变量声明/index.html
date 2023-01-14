@@ -7,6 +7,32 @@
     <title>变量声明</title>
 </head>
 <body>
-    
+    <script>
+        //变量的声明 var let const
+        var declarVar = "";
+        if(true){
+            //具有块级作用域
+            let declarLet = "";
+        }
+
+        const declarConst = "";
+        try {
+            declarConst = "3"
+        } catch (error) {
+            console.log(error);//Assignment to constant variable.
+        }
+
+        //若没有为变量设置初始值 为undefined
+        let a;
+        console.log(a);
+        //若没有声明变量直接使用会报 ReferenceError
+        try {
+            console.log(basics)
+        } catch (error) {
+            console.log(error)
+        }
+        //当变量为undefined、null时，布尔环境下为false
+        console.log(Boolean(a))
+    </script>
 </body>
 </html>
